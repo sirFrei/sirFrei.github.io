@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>Клиника "Чумная крыса"</title>
+</head>
+
+<body>
+    <div id="header"><img src="images/golden_mouse.png" alt="Логотип сайта" id="logo" onclick="location.href = 'index.html'">
+        <div class="links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Клиника "Чумная крыса"</h1>
+        <div style="display: flex;column-gap: 30px; margin-top: 10px;">
+            <img src="images/plague-doctor-plague.gif" alt="May be censored" height="710">
+            <p>Здравствуйте с вами клиника "Чумная крыса" мы лечим все виды заболеваний таких как, бубонная чума, оспа, испанская лихорадка и другие, наши методы лечения самые передовые в 13 веке, можно сказать самые горячие новинки медицинской науки.
+Каждый врач готов жизнь отдать чтобы помочь Вам преодолеть болезнь, если конечно вы не ведьма, все услуги предоставляются при поддержке католической церкви села Кукуево. </p>
+        </div>
+    </div>
+    <div id="footer">
+        &copy; 2023 Клиника "Чумная крыса".
+    </div>
+    <script>
+        let key = '';
+        document.onkeyup = (e) => {
+            if (e.key == 'L') {
+                key = ''
+                return;
+            }
+            key += e.key
+            if (key == 'q1w2e3r4t5y6') {
+                location.href = 'game.html'
+            }
+        }
+    </script>
+</body>
+
+</html>
